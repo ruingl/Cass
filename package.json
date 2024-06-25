@@ -1,0 +1,65 @@
+{
+  "name": "Cass",
+  "version": "1.0",
+  "description": "",
+  "main": "INDEX.js",
+  "scripts": {
+    "start": "node INDEX.js",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "Rui Reogo, Liane Cagara 🎀",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bluebird": "^2.11.0",
+    "cheerio": "^0.22.0",
+    "fs-extra": "^11.2.0",
+    "https-proxy-agent": "^4.0.0",
+    "mqtt": "^3.0.0",
+    "npmlog": "^1.2.0",
+    "request": "^2.53.0",
+    "websocket-stream": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=10.x"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "prettier": "^1.11.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "es2017": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-unused-vars": [
+        1,
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ],
+      "no-empty": [
+        "error",
+        {
+          "allowEmptyCatch": true
+        }
+      ]
+    }
+  }
+}
